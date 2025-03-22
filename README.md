@@ -17,32 +17,45 @@ SWIFT code solution for ensuring international wire transfers.
 2. Setup data in the following manner:
    
    swift-api/
+   
    │── data/
+   
    │   ├── swift_codes.xlsx
+   
    │── app.py
+   
    │── README.md
 
-3. Run API server with "python swift_Solution.py"
-4. Fetch details for a specific SWIFT code.
+4. Run API server with "python swift_Solution.py"
+5. Fetch details for a specific SWIFT code.
    Example: GET /swift/ABCDEFGHXXX
 
    Possible responses:
    - Response 200 - OK
+     
      {
+     
     "BIC": "ABCDEFGHXXX",
+   
     "Bank Name": "Example Bank",
-    "Country": "US",
-    "City": "New York"
+
+    "Country": "Poland",
+   
+    "City": "Krakow"
+   
      }
      
    - Response 404 - Not Found or Invalid SWIFT Code
+     
      {
+     
     "detail": "SWIFT code not found"
+   
      }
 
-5. If all tests are passed the code prints:
+7. If all tests are passed the code prints:
    Running tests...
    All tests passed!
 
-6. Optional: to run the server in live production run "uvicorn app:app --host 0.0.0.0 --port 8000 --workers 4"
+8. Optional: to run the server in live production run "uvicorn app:app --host 0.0.0.0 --port 8000 --workers 4"
    This ensures the server is still running if the terminal is closed or the server restarted.
