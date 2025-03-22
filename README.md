@@ -20,7 +20,7 @@ SWIFT code solution for ensuring international wire transfers.
    
    │── data/
    
-   │   ├── swift_codes.xlsx
+   │      ├── swift_codes.xlsx
    
    │── app.py
    
@@ -43,7 +43,7 @@ SWIFT code solution for ensuring international wire transfers.
    
     "City": "Krakow"
    
-     }
+      }
      
    - Response 404 - Not Found or Invalid SWIFT Code
      
@@ -51,7 +51,7 @@ SWIFT code solution for ensuring international wire transfers.
      
     "detail": "SWIFT code not found"
    
-     }
+      }
 
 7. If all tests are passed the code prints:
    Running tests...
