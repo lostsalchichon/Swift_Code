@@ -1,4 +1,4 @@
-# swift_Solution.py
+# swift_solution.py
 SWIFT code solution for ensuring international wire transfers.
 
 # Important
