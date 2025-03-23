@@ -1,5 +1,5 @@
 # swift_solution.py
-SWIFT code solution for ensuring international wire transfers.
+SWIFT code solution for retreiving BIC information form a spreadsheet file.
 
 # Important
 - The code assumes the spreadsheet is contained inside the data/ folder.
